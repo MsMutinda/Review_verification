@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.CartFragment"
+    android:id="@+id/fragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/simpleProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:indeterminateTint="@color/secondaryLightColor"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:textSize="25dp"
+                android:fontFamily="@font/baloo"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/primaryColor"
+                android:id="@+id/cart_label"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTextGrey"
+                android:layout_below="@+id/cart_label"
+                android:id="@+id/view_label"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_label"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="CHECK OUT"
+                android:background="@drawable/button_bg"
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:id="@+id/add_to_cart"
+                android:paddingLeft="10dp"
+                android:drawableTint="#fff"
+                android:drawableLeft="@drawable/ic_shopping_cart"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/recyclerView"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

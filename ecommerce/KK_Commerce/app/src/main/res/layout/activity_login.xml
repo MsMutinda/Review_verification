@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1f1f1d"
+    android:id="@+id/linearLayout">
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="0dp"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:background="@drawable/white_line"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/first_line"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:background="@drawable/red_line"
+            android:id="@+id/second_line"
+            android:layout_toRightOf="@+id/first_line"
+            android:layout_marginLeft="8dp"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:background="@drawable/white_line"
+            android:id="@+id/third_line"
+            android:layout_toRightOf="@+id/second_line"
+            android:layout_marginLeft="8dp"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="32dp"
+            android:background="@drawable/red_line"
+            android:id="@+id/fourth_line"
+            android:layout_toRightOf="@+id/third_line"
+            android:layout_marginLeft="8dp"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:background="@drawable/green_line"
+            android:id="@+id/fifth_line"
+            android:layout_toRightOf="@+id/fourth_line"
+            android:layout_marginLeft="8dp"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="23dp"
+            android:background="@drawable/white_line"
+            android:id="@+id/sixth_line"
+            android:layout_toRightOf="@+id/fifth_line"
+            android:layout_marginLeft="8dp"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:indeterminateTint="@color/secondaryLightColor"
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:transitionName="logo_image"
+        android:src="@drawable/ic_shopping_cart"
+        android:tint="@color/colorWhiteTrans"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, Welcome."
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"
+        android:transitionName="logo_text"
+        android:fontFamily="@font/baloo"
+        android:textColor="#fff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In to continue"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorWhiteTrans"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:hintTextColor="#990033"
+            android:textColorHint="@color/colorWhiteTrans">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:backgroundTint="#990033"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:textColor="#fff"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="#990033"
+            android:textColorHint="@color/colorWhiteTrans"
+            android:hint="Password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#990033"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:textColor="#fff"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:textColor="@color/colorWhiteTrans"
+            android:text="Forget Password?" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:background="#990033"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/btnLogin"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:id="@+id/signup"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:text="New User? SIGN UP"
+            android:textColor="@color/colorWhiteTrans"/>
+
+    </LinearLayout>
+</LinearLayout>

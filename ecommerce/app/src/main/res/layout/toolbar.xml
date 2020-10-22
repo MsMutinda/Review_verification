@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="#1f1f1d">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/baloo"
+            android:textSize="@dimen/h1"
+            style="@style/Regular"/>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="5dp"
+                android:layout_height="10dp"
+                android:background="@drawable/white_line"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/first_line"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="20dp"
+                android:background="@drawable/red_line"
+                android:id="@+id/second_line"
+                android:layout_toRightOf="@+id/first_line"
+                android:layout_marginLeft="8dp"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:background="@drawable/white_line"
+                android:id="@+id/third_line"
+                android:layout_toRightOf="@+id/second_line"
+                android:layout_marginLeft="8dp"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="32dp"
+                android:background="@drawable/red_line"
+                android:id="@+id/fourth_line"
+                android:layout_toRightOf="@+id/third_line"
+                android:layout_marginLeft="8dp"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:background="@drawable/green_line"
+                android:id="@+id/fifth_line"
+                android:layout_toRightOf="@+id/fourth_line"
+                android:layout_marginLeft="8dp"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="23dp"
+                android:background="@drawable/white_line"
+                android:id="@+id/sixth_line"
+                android:layout_toRightOf="@+id/fifth_line"
+                android:layout_marginLeft="8dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

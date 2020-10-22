@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/product_rating_reviews"
+            android:id="@+id/label4"
+            android:textColor="@color/secondaryDarkColor"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/label4"
+            android:id="@+id/view"
+            android:background="@color/primaryDarkColor"/>
+
+        <RatingBar
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:id="@+id/ratingBar2"
+            android:padding="5dp"
+            android:layout_below="@+id/view"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment"
+            android:padding="5dp"
+            android:textColor="@color/secondaryDarkColor"
+            android:layout_below="@+id/ratingBar2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/buyer"
+            android:textColor="@color/secondaryDarkColor"
+            android:layout_below="@+id/comment"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer"
+            android:layout_alignParentRight="true"
+            android:textColor="#8E8F8F"
+            android:text="Verified Review"
+            android:layout_marginRight="10dp"
+            android:id="@+id/verfied_unverified"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetailsActivity"
+    android:id="@+id/relativeLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Details"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/primaryDarkColor"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="10dp"
+                android:id="@+id/details_label"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTextGrey"
+                android:layout_below="@+id/details_label"
+                android:id="@+id/view_label"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/view_label"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/delivered"
+                android:text="Mark As Delivered"
+                android:background="@drawable/button_bg"
+                android:layout_below="@+id/recyclerView"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

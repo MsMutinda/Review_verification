@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryDarkColor"
+                android:id="@+id/label1"
+                android:text="Order Number"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryDarkColor"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+
+                android:id="@+id/order" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryDarkColor"
+                android:id="@+id/label2"
+                android:layout_below="@+id/label1"
+                android:text="Order Date"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryDarkColor"
+                android:layout_below="@+id/label1"
+                android:id="@+id/order_date"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryDarkColor"
+                android:id="@+id/label3"
+                android:layout_below="@+id/label2"
+                android:text="Delivery Status"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryDarkColor"
+                android:layout_below="@+id/label2"
+                android:id="@+id/delivery_status"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryDarkColor"
+                android:id="@+id/label4"
+                android:layout_below="@+id/label3"
+                android:text="Review Status"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryDarkColor"
+                android:layout_below="@+id/label3"
+                android:id="@+id/review_status"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryDarkColor"
+                android:id="@+id/label5"
+                android:layout_below="@+id/label4"
+                android:text="Total Amount"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryDarkColor"
+                android:layout_below="@+id/label4"
+                android:id="@+id/total_amount"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

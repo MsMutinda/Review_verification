@@ -1,4 +1,4 @@
-
+<<<<<<< HEAD
 *.iml
 .gradle
 /local.properties
@@ -13,7 +13,7 @@
 /captures
 .externalNativeBuild
 .cxx
-
+=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -129,3 +129,4 @@ media/
 # **/migrations/**
 # !**/migrations
 # !**/migrations/__init__.py
+>>>>>>> cdcff0eb303c7d2c57d6e15e79c4dbe8eb4f03b8
