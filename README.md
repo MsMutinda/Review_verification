@@ -1,6 +1,6 @@
 # Fake-review-classification
 
-In this project i will be developing an algorithm to distinguish between fake and genuine reviews in e-commerce platforms
+In this project i will be developing a classifier to help distinguish between fake and genuine reviews in e-commerce platforms
 
 # Built With
 - Python
